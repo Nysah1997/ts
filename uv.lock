@@ -1,0 +1,22 @@
+version = 1
+requires-python = ">=3.11"
+
+[[package]]
+name = "repl-nix-workspace"
+version = "0.1.0"
+source = { virtual = "." }
+dependencies = [
+    { name = "ts3" },
+]
+
+[package.metadata]
+requires-dist = [{ name = "ts3", specifier = ">=1.0.11" }]
+
+[[package]]
+name = "ts3"
+version = "1.0.11"
+source = { registry = "https://pypi.org/simple" }
+sdist = { url = "https://files.pythonhosted.org/packages/58/3e/8937ebc6dad9b08d2f6e2635aff0ffe9d3ecdd5e7f4563b13f0a8da91fbc/ts3-1.0.11.tar.gz", hash = "sha256:5c7ddee40f4446d4b6c541665cc536d270481f82c27adfe1c2e371426ddbd0d7", size = 40492 }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/fc/5e/5fd5eaac9cdd2110bf97b92b68563f0aedfc9f0cef4a97235dc3ca34099f/ts3-1.0.11-py3-none-any.whl", hash = "sha256:65eae95451f89e4c22cd698e5526f304124ca929c9d98f0a74b042f9cc57d8d6", size = 54518 },
+]
